@@ -241,11 +241,12 @@ ul {
   margin-left: 24px;
 }
 
-
 .list.strenghts.item {
   width: 264px;
 }
 
+
+/* ----------TEAM-------------*/
 .team-item-text {
   text-align: center;
   padding-top: 32px;
@@ -272,6 +273,34 @@ ul {
   font-size: 36px;
   line-height: 1.11;
 }
+/* TEAM ICONS*/
+.team-social {
+  display: flex;
+
+}
+
+.team-icons {
+  width: 40px;
+  height: 40px;
+  background-color: var(--button-color);
+  border-radius: 50%;
+}
+
+.team-icon {
+  box-sizing: border-box;
+  padding: 12px;
+  min-width: 100%;
+  height: auto;
+}
+
+.team-icons:hover {
+  background-color: var(--active-button);
+}
+
+.team-icons:focus {
+  background-color:var(--active-button);
+}
+
 
 /*--------------------------------------P O R T F O L I O------------------------------------------*/
 
