@@ -177,6 +177,40 @@ ul {
   width: 264px;
   color: var(--second-background-color);
 }
+.footer-title {
+  font-size: 16px;
+  margin-bottom: 16px;
+  margin-right: 120px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-backround-color);
+}
+
+/*Footer Social Networks Icons*/
+.footer-social .list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.footer-icons {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--main-backround-color);
+}
+
+.footer-icon {
+  box-sizing: border-box;
+  min-width: 100%;
+  height: auto;
+}
+
+.footer-icons:hover {
+  background-color: #31D0AA;
+}
 
 
 /*--------------------------------------S T U D I O------------------------------------------*/
@@ -243,20 +277,24 @@ ul {
 }
 
 .list.strenghts.item {
-  width: 264px;
+flex-basis: calc((100% - 72px) / 4);
 }
+
+/*
+.list.strenghts.item {
+  flex-basis: calc((100%-3*24)/4);
+}
+*/
 
 /*strenghts icons*/
 .strenghts-decor {
-
   height: 112px;
   margin-bottom: 8px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F4F4FD;
-
+  background-color: var(--portfolio-btn);
 }
 
 .strenghts-icon {
@@ -295,21 +333,25 @@ ul {
 /* TEAM ICONS*/
 .team-social {
   display: flex;
-
+  margin-top: 12px;
+    gap: 24px;
+    align-items: center;
 }
 
 .team-icons {
   display: flex;
   align-items: center;
-  grid-gap: 24px;
   border-radius: 50px;
   justify-content: center;
+  fill: var(--main-backround-color);
+  background-color: var(--button-color);
 }
 
 .team-icon {
+  padding: 12px;
+  box-sizing: border-box;
   width: 40px;
     height: 40px;
- 
 }
 
 .team-icons:hover {
@@ -331,6 +373,10 @@ ul {
   gap: 24px;
 }
 
+/*
+у мене .customers-item = у нього .customer-icon
+*/
+
 
 .customers-icons {
   display: flex;
@@ -338,18 +384,14 @@ ul {
   height: 88px;
   padding: 16px 32px;
   border-radius: 4px;
-  border: 1px solid var(--grey-icon);
-  color: var(--grey-icon);
+  border: 1px solid var(--grey-icon); 
   justify-content: center;
-
+  align-items: center;
+  color: var(--grey-icon);
 }
 
 .customers-icon {
-  width: 104px;
-  height: 88px;
   fill: currentColor;
-  max-width: 100%;
-  height: auto;
 }
 
 .customers-icons:hover,
@@ -421,5 +463,12 @@ ul {
 .link p {
   color: var(--secont-text-color);
 }
+
+.gallery-list .item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 
