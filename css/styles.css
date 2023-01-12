@@ -198,16 +198,8 @@ ul {
   color: var(--main-backround-color);
 }
 .footer-left {
-  display: flex;
   margin-right: 120px;
 }
-.footer-right {
-  display: flex;
-}
-
-  
-
-
 
 /*Footer Social Networks Icons*/
 .social-item {
@@ -222,16 +214,8 @@ margin-right: 16px;
   display: flex;
 }
 
-/* margin-top: 12px;
-gap: 24px;
-align-items: center;
-padding: 12px 16px 36px 16px;
-justify-content: space-between;
-*/
-
-
 .footer-icons {
-  display:flex;
+  display: flex;
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -241,11 +225,6 @@ justify-content: space-between;
   border-radius: 50%;
   fill: var(--main-backround-color);
 }
-
-/* 
-
- align-items: center;
- justify-content: center;*/
 
 .footer-icon {
   width: 24px;
@@ -320,16 +299,12 @@ justify-content: space-between;
   margin-left: 24px;
 }
 
-.list.strenghts.item {
-flex-basis: calc((100% - 72px) / 4);
+.list-item {
+  margin-right: 24px;
+    flex-basis: calc((100%-72)/4);
 }
 
 
-/*
-.list.strenghts.item {
-  flex-basis: calc((100%-3*24)/4);
-}
-*/
 
 /*strenghts icons*/
 .strenghts-decor {
