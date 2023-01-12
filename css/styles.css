@@ -204,10 +204,13 @@ ul {
 /*Footer Social Networks Icons*/
 .social-item {
 margin-right: 16px;
+width: 40px;
+  height: 40px;
 }
 
 .social-item:last-child {
   margin-right: 0px;
+   
 }
 
 .footer-social {
@@ -216,9 +219,8 @@ margin-right: 16px;
 
 .footer-icons {
   display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
@@ -231,7 +233,8 @@ margin-right: 16px;
   height: 24px;
 }
 
-.footer-icons:hover {
+.footer-icons:hover,
+.footer-icons:focus {
   background-color: #31D0AA;
 }
 
@@ -245,6 +248,7 @@ margin-right: 16px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/herophoto.jpeg);
   background-size: cover;
   background-position: center;
+  max-width: 1440px;
 }
 
 .hero .title {
@@ -301,8 +305,10 @@ margin-right: 16px;
 
 .list-item {
   margin-right: 24px;
-    flex-basis: calc((100%-72)/4);
+  flex-basis: calc((100%-72px) / 4);
 }
+
+
 
 
 
@@ -353,14 +359,16 @@ margin-right: 16px;
 /* TEAM ICONS*/
 .team-social {
   display: flex;
-  margin-top: 12px;
-  gap: 24px;
-  align-items: center;
-  padding: 12px 16px 36px 16px;
-  justify-content: space-between;
+    padding: 12px 16px 36px 16px;
+    justify-content: space-between;
 }
-
+.team-social-li {
+  width: 40px;
+    height: 40px;
+}
 .team-icons {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -375,6 +383,7 @@ margin-right: 16px;
   width: 40px;
     height: 40px;
 }
+
 
 .team-icons:hover {
   background-color: var(--active-button);
@@ -404,10 +413,6 @@ margin-right: 16px;
   margin-top: 72px;
   gap: 24px;
 }
-
-/*
-у мене .customers-item = у нього .customer-icon
-*/
 
 
 .customers-icons {
@@ -495,11 +500,22 @@ margin-right: 16px;
   color: var(--secont-text-color);
 }
 
+/* 
 .gallery-list .item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+*/
 
+.project-link {
+  display: block;
+}
 
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
