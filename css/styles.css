@@ -360,7 +360,7 @@ width: 40px;
 /* TEAM ICONS*/
 .team-social {
   display: flex;
-  margin-top: 8px;
+  margin-top: 12px;
     justify-content: center;
     gap:24px;
 }
