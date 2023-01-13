@@ -360,8 +360,9 @@ width: 40px;
 /* TEAM ICONS*/
 .team-social {
   display: flex;
-    padding: 12px 16px 36px 16px;
-    justify-content: space-between;
+  margin-top: 8px;
+    justify-content: center;
+    gap:24px;
 }
 .team-social-li {
   width: 40px;
